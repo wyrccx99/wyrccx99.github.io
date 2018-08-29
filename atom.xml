@@ -96,7 +96,7 @@
     <link href="http://yoursite.com/CCX/%E6%BB%91%E7%A8%BD/"/>
     <id>http://yoursite.com/CCX/滑稽/</id>
     <published>2018-08-27T14:20:39.000Z</published>
-    <updated>2018-08-27T14:22:29.492Z</updated>
+    <updated>2018-08-29T06:26:31.694Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/CCX/滑稽/smile.jpg" alt="滑稽"></p>]]></content>
     
@@ -110,6 +110,8 @@
     
     </summary>
     
+    
+      <category term="滑稽" scheme="http://yoursite.com/tags/%E6%BB%91%E7%A8%BD/"/>
     
   </entry>
   
