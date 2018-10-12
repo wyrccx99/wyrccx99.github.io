@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 艽野尘梦</title>
+  <title>艽野尘梦</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="React-Native(RN)的入坑之路 本文主要介绍Windows下android平台开发环境的搭建和遇坑总结  官方文档官方文档有一个大体上的引导作用，很多时候还是需要自己去摸索好填平遇到的坑，然后从这个坑跳到另一个坑。开发环境搭建-官方文档 准备工作 Node.js，版本必须高于8.3，安装完node后建议更改镜像为淘宝镜像，操作如下：1.1.找到你nodejs的安装路径1.2.进入目录n">
+<meta property="og:type" content="article">
 <meta property="og:title" content="艽野尘梦">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/CCX/React-Native-RN-的入坑之路/index.html">
 <meta property="og:site_name" content="艽野尘梦">
+<meta property="og:description" content="React-Native(RN)的入坑之路 本文主要介绍Windows下android平台开发环境的搭建和遇坑总结  官方文档官方文档有一个大体上的引导作用，很多时候还是需要自己去摸索好填平遇到的坑，然后从这个坑跳到另一个坑。开发环境搭建-官方文档 准备工作 Node.js，版本必须高于8.3，安装完node后建议更改镜像为淘宝镜像，操作如下：1.1.找到你nodejs的安装路径1.2.进入目录n">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/CCX/React-Native-RN-的入坑之路/React-Native(RN">
+<meta property="og:updated_time" content="2018-10-12T02:40:00.240Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="艽野尘梦">
+<meta name="twitter:description" content="React-Native(RN)的入坑之路 本文主要介绍Windows下android平台开发环境的搭建和遇坑总结  官方文档官方文档有一个大体上的引导作用，很多时候还是需要自己去摸索好填平遇到的坑，然后从这个坑跳到另一个坑。开发环境搭建-官方文档 准备工作 Node.js，版本必须高于8.3，安装完node后建议更改镜像为淘宝镜像，操作如下：1.1.找到你nodejs的安装路径1.2.进入目录n">
+<meta name="twitter:image" content="http://yoursite.com/CCX/React-Native-RN-的入坑之路/React-Native(RN">
   
     <link rel="alternative" href="/atom.xml" title="艽野尘梦" type="application/atom+xml">
   
@@ -148,271 +154,230 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+             <article id="post-React-Native-RN-的入坑之路" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="React-Native-RN-的入坑之路"><a href="#React-Native-RN-的入坑之路" class="headerlink" title="React-Native(RN)的入坑之路"></a>React-Native(RN)的入坑之路</h1><blockquote>
+<p>本文主要介绍Windows下android平台开发环境的搭建和遇坑总结</p>
+</blockquote>
+<h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p>官方文档有一个大体上的引导作用，很多时候还是需要自己去摸索好填平遇到的坑，然后从这个坑跳到另一个坑。<br><a href="https://reactnative.cn/docs/getting-started/" target="_blank" rel="noopener">开发环境搭建-官方文档</a></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li>Node.js，版本必须高于8.3，安装完node后建议更改镜像为淘宝镜像，操作如下：<br>1.1.找到你nodejs的安装路径<br>1.2.进入目录node_modules\npm找到npmc这个文件并在其最后一行添加如下内容：<br><code>registry = https://registry.npm.taobao.org</code><br><a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js10.11.0下载地址</a><br>1.3.我这里建议使用git来输入命令行操作，这里贴出<a href="https://gitforwindows.org/" target="_blank" rel="noopener">git下载地址</a></li>
+</ol>
+<ol start="2">
+<li><p>Python，版本必须是2.x（不支持3.x）<br><a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">Python2.7.15下载地址</a></p>
+</li>
+<li><p>JDK，版本必须是1.8，安装完jdk记得<a href="https://www.cnblogs.com/cnwutianhao/p/5487758.html" target="_blank" rel="noopener">配置java环境变量</a>（不支持1.9及更高版本）<br><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">JDK1.8下载地址</a> </p>
+</li>
+<li><p>AndroidStudio的下载安装配置不多说了，过程曲折艰难，这里给个链接参考<br>4.1.安装过程确保选中了以下几项：<br><code>Android SDK</code><br><code>Android SDK Platform</code><br><code>Performance (Intel ® HAXM)</code><br><code>Android Virtual Device</code><br><a href="http://www.runoob.com/w3cnote/android-tutorial-android-studio.html" target="_blank" rel="noopener">使用Android Studio开发Android APP</a><br>4.2.SDK版本保证为Android 8.0(oreo),SDK Tools版本保证为26.0.3，模拟器的image选择Oreo<br>4.3.配置 ANDROIDHOME环境变量，系统中添加一个环境变量命名为 ANDROID_HOME，指向你AndroidSDK的路径</p>
+</li>
+</ol>
+<h2 id="创建和运行一个新工程"><a href="#创建和运行一个新工程" class="headerlink" title="创建和运行一个新工程"></a>创建和运行一个新工程</h2><ol>
+<li>安装react-native：<br>打开gitbash，输入如下指令：<br><code>npm install -g yarn react-native-cli</code></li>
+<li>在你想要的路径下init工程：<br><code>react-native init AwesomeProject</code><br>init完毕后你可以使用AndroidStudio打开新创建RN工程目录下的Android工程编译运行或者进行接下来的操作</li>
+<li>编译运行前先查看有没有开启AndroidStudio中的   模拟器或者电脑连接（使用usb数据线或者无线调试）真机设备（需要开启usb调试），如果使用AndroidStudio中的模拟器或者则不需要如下操作<br>在gitbash中输入<code>adb devices</code>如果出现有如下返回值： <pre><code>$ adb devices   
+List of devices attached   
+********      device
+</code></pre> 说明当前有设备连接，如果不是说明当前没有设备连接</li>
+<li>连接成功后执行命令：<br><code>react-native run-android</code><br>如果设备上出现如下图内容，那么恭喜你入坑成功<br><img src="/CCX/React-Native-RN-的入坑之路/React-Native(RN" alt="欢迎入坑">的入坑之路/WelcomePage.png)<br>4.1.如果出现红字诸如：<code>bundling failed: Error: Unable to resolve module /../react-transform-hmr/lib/index.js</code><br>你可能会需要如下操作：<br>&nbsp;&nbsp;4.1.1开启两个gitbash都进入当前工程（AwesomeProject）目录下<br>&nbsp;&nbsp;4.2.其中一个gitbash窗口执行<br>&nbsp;&nbsp;<code>react-native start --reset-cache</code><br>&nbsp;&nbsp;另一个gitbash窗口执行<br>&nbsp;&nbsp;<code>react-native run-android</code><br>4.2.如果出现RN服务启动失败的情况，请访问此页：  <a href="http://facebook.github.io/react-native/docs/troubleshooting.html" target="_blank" rel="noopener">故障排除</a></li>
+</ol>
+<h2 id="编译和运行从github上clone或者下载的工程"><a href="#编译和运行从github上clone或者下载的工程" class="headerlink" title="编译和运行从github上clone或者下载的工程"></a>编译和运行从github上clone或者下载的工程</h2><blockquote>
+<p>这里以github上的react-native-nba-app作为例子<br>项目链接：<a href="https://github.com/wwayne/react-native-nba-app" target="_blank" rel="noopener">react-native-nba-app</a></p>
+</blockquote>
+<ol>
+<li>下载工程<br>直接下载或者使用gitbash执行命令：<br><code>$git clone https://github.com/wwayne/react-native-nba-app.git</code><br>clone到本地</li>
+<li>下载node_modoules文件<br>进入下载后解压的工程目录下执行命令：<code>npm install</code><br>然后执行 <code>react-native start</code><br>如果遇到如下问题：   <blockquote>
+<p>ERROR  Watcher took too long to load   </p>
+</blockquote>
+</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    修改FileWatcher的MAX_WAIT_TIME 时间<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> 路径：<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> node_modules—&gt;react-native—&gt;packager—&gt;react-packager—&gt;src—&gt;node-haste—&gt;FileWatcher—&gt;index.js<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> 文件里的MAX_WAIT_TIME = 250000;</p>
+<ol start="3">
+<li>完成后可以直接打AndroidStudio中打开RN工程目录下的Android工程，编译运行<br>使用AS编译运行后，摇晃手机打开Dev Settings，在Debug server host &amp; port for device中设置电脑ip和react-native服务端口，服务默认使用端口为8081，电脑ip地址通过命令行<code>ipconfig</code>查看<br>或者直接在RN工程目录下执行<code>react-native run-android</code></li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/CCX/React-Native-RN-的入坑之路/" class="archive-article-date">
-  	<time datetime="2018-10-12T01:44:52.604Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/CCX/React-Native-RN-的入坑之路/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/CCX/荣耀与背叛/" class="archive-article-date">
-  	<time datetime="2018-09-18T06:15:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/CCX/荣耀与背叛/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">荣耀与背叛</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/CCX/荣耀与背叛/">荣耀与背叛</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Dota</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#React-Native-RN-的入坑之路"><span class="toc-number">1.</span> <span class="toc-text">React-Native(RN)的入坑之路</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#官方文档"><span class="toc-number">1.1.</span> <span class="toc-text">官方文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.2.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建和运行一个新工程"><span class="toc-number">1.3.</span> <span class="toc-text">创建和运行一个新工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译和运行从github上clone或者下载的工程"><span class="toc-number">1.4.</span> <span class="toc-text">编译和运行从github上clone或者下载的工程</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/CCX/Invoker/" class="archive-article-date">
-  	<time datetime="2018-08-29T06:13:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-29</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/CCX/Invoker/">Invoker</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/CCX/TI8决赛LGD惜败OG/" class="archive-article-date">
-  	<time datetime="2018-08-29T00:59:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/CCX/TI8决赛LGD惜败OG/">TI8决赛LGD惜败OG</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">TI8</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/CCX/艽野羌塘尘梦凤凰/" class="archive-article-date">
-  	<time datetime="2018-08-28T02:38:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/CCX/艽野羌塘尘梦凤凰/">艽野羌塘 尘梦凤凰</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">艽野尘梦</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/CCX/滑稽/" class="archive-article-date">
-  	<time datetime="2018-08-27T14:20:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/CCX/滑稽/">滑稽</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">滑稽</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/CCX/waiting-for-you/" class="archive-article-date">
-  	<time datetime="2018-08-27T14:01:56.679Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/CCX/waiting-for-you/">我在西塘等你</a>
-    </h1>
-  
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "2rzOPQT27TTRHnk2HoBzSP4I-gzGzoHsz",
+            app_key: "RyS3zif4LU0DTFwKx4A8D5UU",
+            placeholder: "此地儿输入评论内容..",
+            avatar: "",
+            avatar_cdn: "https://sdn.geekzu.org/avatar/",
+            pageSize: 15
+    });
+</script>
+  </section>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -439,8 +404,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
