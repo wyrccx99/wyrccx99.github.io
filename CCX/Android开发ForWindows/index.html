@@ -16,17 +16,31 @@
 <meta property="og:site_name" content="艽野尘梦">
 <meta property="og:description" content="本文主要介绍android在Windows下平台开发环境的搭建和遇坑总结部分内容来自网络，如有侵权联系删除。  一、官方文档官方文档有一个大体上的引导作用，很多时候还是需要自己去摸索。开发环境搭建-官方文档">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install1.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install2.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install3.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install4.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install5.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install6.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install7.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/install8.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/start1.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/start2.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/start3.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/start4.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/start5.png">
+<meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/start6.jpg">
 <meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/pic1.png">
 <meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/pic2.png">
 <meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/pic3.png">
 <meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/pic4.png">
 <meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/pic5.png">
 <meta property="og:image" content="http://yoursite.com/CCX/Android开发ForWindows/pic6.png">
-<meta property="og:updated_time" content="2018-12-17T06:30:01.970Z">
+<meta property="og:updated_time" content="2018-12-20T01:53:02.490Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android开发ForWindows简要介绍">
 <meta name="twitter:description" content="本文主要介绍android在Windows下平台开发环境的搭建和遇坑总结部分内容来自网络，如有侵权联系删除。  一、官方文档官方文档有一个大体上的引导作用，很多时候还是需要自己去摸索。开发环境搭建-官方文档">
-<meta name="twitter:image" content="http://yoursite.com/CCX/Android开发ForWindows/pic1.png">
+<meta name="twitter:image" content="http://yoursite.com/CCX/Android开发ForWindows/install1.png">
   
     <link rel="alternative" href="/atom.xml" title="艽野尘梦" type="application/atom+xml">
   
@@ -173,7 +187,7 @@
 
         
 		<a href="/CCX/Android开发ForWindows/" class="archive-article-date">
-  	<time datetime="2018-12-13T01:38:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-13</time>
+  	<time datetime="2018-12-20T01:48:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-20</time>
 </a>
 		
 		<span class="archive-article-date">
@@ -194,30 +208,68 @@
 <h4 id="2-AndroidStudio"><a href="#2-AndroidStudio" class="headerlink" title="2.AndroidStudio"></a>2.AndroidStudio</h4><p> <a href="http://www.android-studio.org/" target="_blank" rel="noopener">AndroidStudio下载-中文社区</a>   </p>
 <p> AndroidStudio的下载安装配置不多说了，过程曲折艰难，这里给个链接参考</p>
 <p> 安装过程确保选中了以下几项：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Android SDK   </span><br><span class="line">Android SDK Platform   </span><br><span class="line">Performance (Intel ® HAXM)   </span><br><span class="line">Android Virtual Device</span><br></pre></td></tr></table></figure></p>
-<p><a href="http://www.runoob.com/w3cnote/android-tutorial-android-studio.html" target="_blank" rel="noopener">具体安装过程可参考此页内容</a></p>
-<h2 id="三、新建工程"><a href="#三、新建工程" class="headerlink" title="三、新建工程"></a>三、新建工程</h2><p>1.创建新工程；   </p>
-<center><img src="/CCX/Android开发ForWindows/pic1.png" alt="1"></center>   
+<h2 id="三、安装过程详解"><a href="#三、安装过程详解" class="headerlink" title="三、安装过程详解"></a>三、安装过程详解</h2><h4 id="1-安装过程图解"><a href="#1-安装过程图解" class="headerlink" title="1.安装过程图解"></a>1.安装过程图解</h4><p>安装盘符建议D盘，目录建议按照图中方式命名，as安装在AndroidStudio目录下，后面还会在Android目录下新建SDK目录放置SDK：   </p>
+<center><img src="/CCX/Android开发ForWindows/install1.png" alt="1"></center>    
+
+<center><img src="/CCX/Android开发ForWindows/install2.png" alt="2"></center>
+
+<center><img src="/CCX/Android开发ForWindows/install3.png" alt="3"></center>
+
+<p>进入自定义安装选项：</p>
+<center><img src="/CCX/Android开发ForWindows/install4.png" alt="4"></center>
+
+<center><img src="/CCX/Android开发ForWindows/install5.png" alt="5"></center>
+
+<center><img src="/CCX/Android开发ForWindows/install6.png" alt="6"></center>   
+
+<p>设置安卓虚拟机内存：</p>
+<center><img src="/CCX/Android开发ForWindows/install7.png" alt="7"></center>
+
+<p>这个地方需要下载相关组件如sdk，虚拟机文件：</p>
+<center><img src="/CCX/Android开发ForWindows/install8.png" alt="8"></center>
+
+<center><img src="/CCX/Android开发ForWindows/start1.png" alt="1"></center>
+
+<h4 id="2-初次新建工程会需要的问题"><a href="#2-初次新建工程会需要的问题" class="headerlink" title="2.初次新建工程会需要的问题"></a>2.初次新建工程会需要的问题</h4><p>在初次新建工程后需要加载gradle编译工具，buildtool以及其他各种小的依赖包。</p>
+<p>如果遇到gradle加载过慢的情况：</p>
+<center><img src="/CCX/Android开发ForWindows/start2.png" alt="2"></center>   
 
 
-<p>2.自定义工程名；   </p>
-<center><img src="/CCX/Android开发ForWindows/pic2.png" alt="2"></center>   
+<p>通过上图中的地址下载加载过慢的gradle的版本压缩包。</p>
+<p>Gradle的放置路径在C:\Users\neon\.gradle\wrapper\dists，这里的neon是我电脑的用户名，找路径的使用进入自己电脑用户名的路径即可。<br>进入后会看到当前正在加载的gradle版本的文件夹</p>
+<center><img src="/CCX/Android开发ForWindows/start3.png" alt="3"></center>
+
+<p>删除下图所致文件夹中的所有内容并将已经下好的gradle压缩包放置其中，文件夹的名称是as在加载gradle的时候自动生成的，之后重启as，等待gradle加载完成。</p>
+<center><img src="/CCX/Android开发ForWindows/start4.png" alt="4"></center>
+
+<p>gradle加载完成后</p>
+<center><img src="/CCX/Android开发ForWindows/start5.png" alt="5"></center>
+
+<center><img src="/CCX/Android开发ForWindows/start6.jpg" alt="6"></center>
 
 
-<p>3.选择工程类型（移动app），选择api版本；   </p>
+
+<h2 id="四、新建工程"><a href="#四、新建工程" class="headerlink" title="四、新建工程"></a>四、新建工程</h2><h4 id="1-创建新工程："><a href="#1-创建新工程：" class="headerlink" title="1.创建新工程："></a>1.创建新工程：</h4><center><img src="/CCX/Android开发ForWindows/pic1.png" alt="1"></center>   
+
+
+<h4 id="2-自定义工程名："><a href="#2-自定义工程名：" class="headerlink" title="2.自定义工程名："></a>2.自定义工程名：</h4><center><img src="/CCX/Android开发ForWindows/pic2.png" alt="2"></center>   
+
+
+<h4 id="3-选择工程类型："><a href="#3-选择工程类型：" class="headerlink" title="3.选择工程类型："></a>3.选择工程类型：</h4><p>选择移动app，选择api版本，这里选择在安装过程中就已经下好的api，当前时间默认是9.0即api28，如果选择其他没有下载api版本，选择后会自动下载</p>
 <center><img src="/CCX/Android开发ForWindows/pic3.png" alt="3"></center>   
 
 
-<p>4.选择是否创建activity并选择布局模板，这里看需求选择，先选择空；    </p>
+<h4 id="4-选择模板："><a href="#4-选择模板：" class="headerlink" title="4.选择模板："></a>4.选择模板：</h4><p>选择是否创建activity并选择布局模板，这里看需求选择，先选择空；    </p>
 <center><img src="/CCX/Android开发ForWindows/pic4.png" alt="4"></center>
 
-<p>5.自定义空模板中自动创建的Activity的名称和对应布局的名称；   </p>
+<h4 id="5-文件命名："><a href="#5-文件命名：" class="headerlink" title="5.文件命名："></a>5.文件命名：</h4><p>自定义空模板中自动创建的Activity的名称和对应布局的名称；   </p>
 <center><img src="/CCX/Android开发ForWindows/pic5.png" alt="5"></center>   
 
 
-<p>6.新建工程完毕，编译通过后连接手机或者创建虚拟机尝试运行。   </p>
+<h4 id="6-新建工程完毕："><a href="#6-新建工程完毕：" class="headerlink" title="6.新建工程完毕："></a>6.新建工程完毕：</h4><p>编译通过后连接手机或者创建虚拟机尝试运行。   </p>
 <center><img src="/CCX/Android开发ForWindows/pic6.png" alt="6"></center>
 
-<h2 id="四、学习和参考文档"><a href="#四、学习和参考文档" class="headerlink" title="四、学习和参考文档"></a>四、学习和参考文档</h2><h4 id="Android基础入门教程"><a href="#Android基础入门教程" class="headerlink" title="Android基础入门教程"></a><a href="http://www.runoob.com/w3cnote/android-tutorial-intro.html" target="_blank" rel="noopener">Android基础入门教程</a></h4><h4 id="Android中文社区"><a href="#Android中文社区" class="headerlink" title="Android中文社区"></a><a href="http://www.android-studio.org/" target="_blank" rel="noopener">Android中文社区</a></h4><h4 id="Android官网"><a href="#Android官网" class="headerlink" title="Android官网"></a><a href="https://developer.android.google.cn/index.html" target="_blank" rel="noopener">Android官网</a></h4>
+<h2 id="五、学习和参考文档"><a href="#五、学习和参考文档" class="headerlink" title="五、学习和参考文档"></a>五、学习和参考文档</h2><h4 id="Android基础入门教程"><a href="#Android基础入门教程" class="headerlink" title="Android基础入门教程"></a><a href="http://www.runoob.com/w3cnote/android-tutorial-intro.html" target="_blank" rel="noopener">Android基础入门教程</a></h4><h4 id="Android中文社区"><a href="#Android中文社区" class="headerlink" title="Android中文社区"></a><a href="http://www.android-studio.org/" target="_blank" rel="noopener">Android中文社区</a></h4><h4 id="Android官网"><a href="#Android官网" class="headerlink" title="Android官网"></a><a href="https://developer.android.google.cn/index.html" target="_blank" rel="noopener">Android官网</a></h4>
       
 
       
@@ -331,18 +383,9 @@
   
 <nav id="article-nav">
   
-    <a href="/CCX/Flutter中实现Toast/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Flutter中实现Toast效果(非FlutterToast)
-        
-      </div>
-    </a>
   
-  
-    <a href="/CCX/waiting-for-you/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我在西塘等你</div>
+    <a href="/CCX/Flutter中实现Toast/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Flutter中实现Toast效果(非FlutterToast)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -369,7 +412,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、官方文档"><span class="toc-number">1.</span> <span class="toc-text">一、官方文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、准备工作"><span class="toc-number">2.</span> <span class="toc-text">二、准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-JDK"><span class="toc-number">2.0.1.</span> <span class="toc-text">1.JDK</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-AndroidStudio"><span class="toc-number">2.0.2.</span> <span class="toc-text">2.AndroidStudio</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、新建工程"><span class="toc-number">3.</span> <span class="toc-text">三、新建工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、学习和参考文档"><span class="toc-number">4.</span> <span class="toc-text">四、学习和参考文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Android基础入门教程"><span class="toc-number">4.0.1.</span> <span class="toc-text">Android基础入门教程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Android中文社区"><span class="toc-number">4.0.2.</span> <span class="toc-text">Android中文社区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Android官网"><span class="toc-number">4.0.3.</span> <span class="toc-text">Android官网</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、官方文档"><span class="toc-number">1.</span> <span class="toc-text">一、官方文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、准备工作"><span class="toc-number">2.</span> <span class="toc-text">二、准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-JDK"><span class="toc-number">2.0.1.</span> <span class="toc-text">1.JDK</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-AndroidStudio"><span class="toc-number">2.0.2.</span> <span class="toc-text">2.AndroidStudio</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、安装过程详解"><span class="toc-number">3.</span> <span class="toc-text">三、安装过程详解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-安装过程图解"><span class="toc-number">3.0.1.</span> <span class="toc-text">1.安装过程图解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-初次新建工程会需要的问题"><span class="toc-number">3.0.2.</span> <span class="toc-text">2.初次新建工程会需要的问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、新建工程"><span class="toc-number">4.</span> <span class="toc-text">四、新建工程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-创建新工程："><span class="toc-number">4.0.1.</span> <span class="toc-text">1.创建新工程：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-自定义工程名："><span class="toc-number">4.0.2.</span> <span class="toc-text">2.自定义工程名：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-选择工程类型："><span class="toc-number">4.0.3.</span> <span class="toc-text">3.选择工程类型：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-选择模板："><span class="toc-number">4.0.4.</span> <span class="toc-text">4.选择模板：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-文件命名："><span class="toc-number">4.0.5.</span> <span class="toc-text">5.文件命名：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-新建工程完毕："><span class="toc-number">4.0.6.</span> <span class="toc-text">6.新建工程完毕：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、学习和参考文档"><span class="toc-number">5.</span> <span class="toc-text">五、学习和参考文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Android基础入门教程"><span class="toc-number">5.0.1.</span> <span class="toc-text">Android基础入门教程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Android中文社区"><span class="toc-number">5.0.2.</span> <span class="toc-text">Android中文社区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Android官网"><span class="toc-number">5.0.3.</span> <span class="toc-text">Android官网</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
